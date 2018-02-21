@@ -1,0 +1,73 @@
+
+<html>
+<style>
+.hfour{
+
+color: yellow;
+
+}
+.hfive{
+
+color: white;
+
+}
+
+
+</style>
+<head>
+  <title>Facebook-App</title>
+  <meta charset="utf-8"></meta>  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+	<body style="background-color: #4682B4;">
+<br></br>
+<br></br>
+<br></br>
+<h1 align="center">Facebook Biodata</h1>
+	<div class="container">
+		
+           
+  <table class="table table-bordered">
+   
+    <tbody>
+    <tr>
+        <td class="hfour"><h3>Facebook Id</h3></td>
+        <td class="hfive"><h3><span th:text="${facebookProfile.id}">Some User</span></h3></td>
+ 
+      </tr>
+      <tr>
+        <td class="hfour"><h3>Facebook name</h3></td>
+        <td class="hfive"><h3><span th:text="${facebookProfile.name}">Some User</span></h3></td>
+ 
+      </tr>
+      <tr>
+        <td class="hfour"><h3>Email</h3></td>
+        <td class="hfive"><h3><span th:text="${facebookProfile.email}">Some User</span></h3></td>
+     
+      </tr>
+      <tr>
+        <td class="hfour"><h3>Link</h3></td>
+        <td class="hfive"><h3><span th:text="${facebookProfile.link}">Some User</span></h3></td>
+   
+      </tr>
+        <tr>
+        <td class="hfour"><h3>Gender</h3></td>
+        <td class="hfive"><h3> <span th:text="${facebookProfile.gender}">Some User</span></h3></td>
+   
+      </tr>
+        <tr>
+        <td class="hfour"><h3>Locale</h3> </td>
+        <td class="hfive"><h3><span th:text="${facebookProfile.locale}">Some User</span></h3></td>
+   
+      </tr>
+        
+    </tbody>
+  </table>
+</div>
+	
+
+	</body>
+</html>
