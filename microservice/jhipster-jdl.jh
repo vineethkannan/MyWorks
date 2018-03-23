@@ -1,0 +1,10 @@
+
+
+entity Customer {
+	name String,
+    email String
+}
+
+paginate * with pagination
+service all with serviceImpl
+dto * with mapstruct

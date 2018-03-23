@@ -1,0 +1,12 @@
+server :
+   port : 8081
+spring:
+ cloud:
+  stream:
+   kafka:
+    binder:
+     brokers: keycloak.graeshoppe.divisotech.com:9092
+   bindings:
+    messages-in:
+     destination: HRTOPIC
+     contentType: application/json
